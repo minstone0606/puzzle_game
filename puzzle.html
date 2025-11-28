@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>퍼즐 맞추기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>퍼즐 맞추기</h1>
+
+    <div class="instructions">
+        <h3>🎮 게임 방법</h3>
+        <ul>
+            <li><strong>드래그 & 드롭:</strong> 파란색 조각을 10x10 보드에 채워주세요.</li>
+            <li><strong>우클릭(Right Click):</strong> 조각을 회전시킬 수 있습니다.</li>
+            <li><strong>게임 종료:</strong> 제한 시간이 모두 지나면 게임이 종료됩니다.</li>
+        </ul>
+    </div>
+
+    <div class="controls">
+        <button id="startBtn" class="control-btn start-btn">▶ 게임 시작</button>
+        <button id="pauseBtn" class="control-btn pause-btn">⏸ 일시정지</button>
+        <button id="passBtn" class="control-btn pass-btn">🔄 조각 교체</button>
+    </div>
+
+    <div class="game-info">
+        <span id="stageDisplay">WAITING...</span>
+        <span id="timerDisplay">04:00</span>
+    </div>
+
+    <div class="container">
+        <div id="board" class="board"></div>
+        <div id="pieces" class="pieces"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
